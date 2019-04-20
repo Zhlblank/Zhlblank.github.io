@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[vs中出现errorLNK2019]]></title>
-    <url>%2F2019%2F04%2F20%2Fvs%E4%B8%AD%E5%87%BA%E7%8E%B0errorLNK2019%2F</url>
-    <content type="text"><![CDATA[vs中出现errorLNK201912错误 1 error LNK2019: 无法解析的外部符号 "void __cdecl run(void)" (?run@@YAXXZ)，该符号在函数 "void __cdecl rungo(void)" (?rungo@@YAXXZ) 中被引用 错误 2 error LNK1120: 1 个无法解析的外部命令 百度上的方法More info: 百度上的:]]></content>
-      <categories>
-        <category>VS</category>
-      </categories>
-  </entry>
-  <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2019%2F04%2F07%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>

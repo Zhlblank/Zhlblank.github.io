@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.zhldream.xyz/"/>
-  <updated>2019-04-20T04:20:03.428Z</updated>
+  <updated>2019-04-07T15:36:35.730Z</updated>
   <id>http://www.zhldream.xyz/</id>
   
   <author>
@@ -15,29 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>vs中出现errorLNK2019</title>
-    <link href="http://www.zhldream.xyz/2019/04/20/vs%E4%B8%AD%E5%87%BA%E7%8E%B0errorLNK2019/"/>
-    <id>http://www.zhldream.xyz/2019/04/20/vs中出现errorLNK2019/</id>
-    <published>2019-04-20T04:00:11.000Z</published>
-    <updated>2019-04-20T04:20:03.428Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="vs中出现errorLNK2019"><a href="#vs中出现errorLNK2019" class="headerlink" title="vs中出现errorLNK2019"></a>vs中出现errorLNK2019</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错误1error LNK2019: 无法解析的外部符号 <span class="string">"void __cdecl run(void)"</span> (?run@@YAXXZ)，该符号在函数 <span class="string">"void __cdecl rungo(void)"</span> (?rungo@@YAXXZ) 中被引用</span><br><span class="line">错误2error LNK1120: 1 个无法解析的外部命令</span><br></pre></td></tr></table></figure><h3 id="百度上的方法"><a href="#百度上的方法" class="headerlink" title="百度上的方法"></a>百度上的方法</h3><p>More info: <a href="https://jingyan.baidu.com/article/4d58d54135d7a79dd4e9c0ad.html" target="_blank" rel="noopener">百度上的:</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;vs中出现errorLNK2019&quot;&gt;&lt;a href=&quot;#vs中出现errorLNK2019&quot; class=&quot;headerlink&quot; title=&quot;vs中出现errorLNK2019&quot;&gt;&lt;/a&gt;vs中出现errorLNK2019&lt;/h2&gt;&lt;figure class
-      
-    
-    </summary>
-    
-      <category term="VS" scheme="http://www.zhldream.xyz/categories/VS/"/>
-    
-    
-  </entry>
   
   <entry>
     <title>Hello World</title>

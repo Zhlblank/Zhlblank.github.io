@@ -121,12 +121,10 @@
 <meta property="og:site_name" content="Dream">
 <meta property="og:description" content="1.Docker安装：（windows下限制较多，docker的linux模式与VM的虚拟服务会冲突，每次使用需要重新开关服务，重启电脑，所以是在windows上的虚拟主机（VM）中实现，此教程适合使用过linux系统的人员）docker安装：https://www.runoob.com/docker/centos-docker-install.html 2.docker的基本使用启动docker">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="e:/blog/source/_posts/images/1.jpg">
-<meta property="og:updated_time" content="2020-04-21T11:55:08.652Z">
+<meta property="og:updated_time" content="2020-04-21T12:10:08.044Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="docker搭建hadoop集群">
 <meta name="twitter:description" content="1.Docker安装：（windows下限制较多，docker的linux模式与VM的虚拟服务会冲突，每次使用需要重新开关服务，重启电脑，所以是在windows上的虚拟主机（VM）中实现，此教程适合使用过linux系统的人员）docker安装：https://www.runoob.com/docker/centos-docker-install.html 2.docker的基本使用启动docker">
-<meta name="twitter:image" content="e:/blog/source/_posts/images/1.jpg">
 
 
 
@@ -419,7 +417,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  303
+                  324
                 </span>
               
 
@@ -469,7 +467,7 @@
 <p><code>docker network create --driver=bridge hadoop</code></p>
 <p>创建好之后查看创建的网络</p>
 <p><code>docker network ls</code></p>
-<p><img src="E:\blog\source\_posts\images\1.jpg" alt="1"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">root@Liunx:~# docker network ls</span><br><span class="line">NETWORK ID          NAME                DRIVER              SCOPE</span><br><span class="line">a520acd0f5eb        bridge              bridge              local</span><br><span class="line">62cb2d841382        hadoop              bridge              local</span><br><span class="line">b7fef15ea068        host                host                local</span><br><span class="line">ba108fc8779a        none                null                local</span><br></pre></td></tr></table></figure>
 <p>然后用ubuntu镜像运行一个容器</p>
 <p><code>docker run -it ubuntu /bin/bash //i和t分别是以交互模式和终端运行</code></p>
 

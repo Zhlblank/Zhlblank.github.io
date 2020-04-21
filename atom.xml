@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://Zhlblank.github.io/"/>
-  <updated>2019-04-07T15:36:35.730Z</updated>
+  <updated>2020-04-21T11:43:46.469Z</updated>
   <id>https://Zhlblank.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>docker搭建hadoop集群</title>
+    <link href="https://Zhlblank.github.io/2020/04/21/docker/"/>
+    <id>https://Zhlblank.github.io/2020/04/21/docker/</id>
+    <published>2020-04-21T07:57:41.000Z</published>
+    <updated>2020-04-21T11:43:46.469Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="1-Docker安装：（windows下限制较多，docker的linux模式与VM的虚拟服务会冲突，每次使用需要重新开关服务，重启电脑，所以是在windows上的虚拟主机（VM）中实现，此教程适合使用过linux系统的人员）"><a href="#1-Docker安装：（windows下限制较多，docker的linux模式与VM的虚拟服务会冲突，每次使用需要重新开关服务，重启电脑，所以是在windows上的虚拟主机（VM）中实现，此教程适合使用过linux系统的人员）" class="headerlink" title="1.Docker安装：（windows下限制较多，docker的linux模式与VM的虚拟服务会冲突，每次使用需要重新开关服务，重启电脑，所以是在windows上的虚拟主机（VM）中实现，此教程适合使用过linux系统的人员）"></a>1.Docker安装：（windows下限制较多，docker的linux模式与VM的虚拟服务会冲突，每次使用需要重新开关服务，重启电脑，所以是在windows上的虚拟主机（VM）中实现，此教程适合使用过linux系统的人员）</h5><p>docker安装：<a href="https://www.runoob.com/docker/centos-docker-install.html" target="_blank" rel="noopener">https://www.runoob.com/docker/centos-docker-install.html</a></p><h5 id="2-docker的基本使用"><a href="#2-docker的基本使用" class="headerlink" title="2.docker的基本使用"></a>2.docker的基本使用</h5><p>启动docker服务</p><p><code>service docker start</code></p><p><code>docker ps //显示运行的容器</code></p><p><code>docker start 容器名/容器ID //运行一个容器 stop是停止运行的容器</code></p><p><code>docker attach 容器名/容器ID //进入运行的容器</code>  </p><p>docker刚安装好是没有镜像的，我用的ubuntu来搭建hadoop集群，也可以用其他linux发行版</p><p><code>docker pull ubuntu  //拉取也就是在docker中下载ubuntu镜像,默认是最新的</code>等待下载完成</p><p><code>docker images //查看镜像，可以看到刚拉取的ubuntu镜像</code> </p><p>ok,因为hadoop集群的通信是需要局域网的，所以我们要创建hadoop的专用网络，用桥接模式</p><p><code>docker network create --driver=bridge hadoop</code></p><p>创建好之后查看创建的网络</p><p><code>docker network ls</code></p><p><img src="E:\blog\source\_posts\docker搭建hadoop集群\捕获.PNG" alt="捕获"></p><p>然后用ubuntu镜像运行一个容器</p><p><code>docker run -it ubuntu /bin/bash //i和t分别是以交互模式和终端运行</code></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h5 id=&quot;1-Docker安装：（windows下限制较多，docker的linux模式与VM的虚拟服务会冲突，每次使用需要重新开关服务，重启电脑，所以是在windows上的虚拟主机（VM）中实现，此教程适合使用过linux系统的人员）&quot;&gt;&lt;a href=&quot;#1-Docke
+      
+    
+    </summary>
+    
+      <category term="docker" scheme="https://Zhlblank.github.io/categories/docker/"/>
+    
+    
+      <category term="hadoop" scheme="https://Zhlblank.github.io/tags/hadoop/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>

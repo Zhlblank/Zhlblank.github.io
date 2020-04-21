@@ -100,7 +100,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="hadoop,">
 
 
 
@@ -113,13 +113,20 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Dream">
-<meta property="og:url" content="https://Zhlblank.github.io/archives/index.html">
+<meta name="description" content="1.Docker安装：（windows下限制较多，docker的linux模式与VM的虚拟服务会冲突，每次使用需要重新开关服务，重启电脑，所以是在windows上的虚拟主机（VM）中实现，此教程适合使用过linux系统的人员）docker安装：https://www.runoob.com/docker/centos-docker-install.html 2.docker的基本使用启动docker">
+<meta name="keywords" content="hadoop">
+<meta property="og:type" content="article">
+<meta property="og:title" content="docker搭建hadoop集群">
+<meta property="og:url" content="https://Zhlblank.github.io/2020/04/21/docker/index.html">
 <meta property="og:site_name" content="Dream">
+<meta property="og:description" content="1.Docker安装：（windows下限制较多，docker的linux模式与VM的虚拟服务会冲突，每次使用需要重新开关服务，重启电脑，所以是在windows上的虚拟主机（VM）中实现，此教程适合使用过linux系统的人员）docker安装：https://www.runoob.com/docker/centos-docker-install.html 2.docker的基本使用启动docker">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="e:/blog/source/_posts/docker搭建hadoop集群/捕获.PNG">
+<meta property="og:updated_time" content="2020-04-21T11:43:46.469Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Dream">
+<meta name="twitter:title" content="docker搭建hadoop集群">
+<meta name="twitter:description" content="1.Docker安装：（windows下限制较多，docker的linux模式与VM的虚拟服务会冲突，每次使用需要重新开关服务，重启电脑，所以是在windows上的虚拟主机（VM）中实现，此教程适合使用过linux系统的人员）docker安装：https://www.runoob.com/docker/centos-docker-install.html 2.docker的基本使用启动docker">
+<meta name="twitter:image" content="e:/blog/source/_posts/docker搭建hadoop集群/捕获.PNG">
 
 
 
@@ -149,13 +156,13 @@
 
 
 
-  <link rel="canonical" href="https://Zhlblank.github.io/archives/">
+  <link rel="canonical" href="https://Zhlblank.github.io/2020/04/21/docker/">
 
 
 
 
 
-  <title>归档 | Dream</title>
+  <title>docker搭建hadoop集群 | Dream</title>
   
 
 
@@ -174,7 +181,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 <a href="https://github.com/ZhlLzq/ZhlLzq.github.io.git" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -310,112 +317,238 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
-
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        嗯..! 目前共计 2 篇日志。 继续努力。
-      </span>
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h2 class="archive-year" id="archive-year-2020">2020</h2>
-          </div>
-        
-        
-
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://Zhlblank.github.io/2020/04/21/docker/">
 
-      <h3 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ZhaoHongliang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/blog.bmp">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Dream">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2020/04/21/docker/" itemprop="url">
+        
+          <h2 class="post-title" itemprop="name headline">docker搭建hadoop集群</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
               
-                <span itemprop="name">docker搭建hadoop集群</span>
+                <span class="post-meta-item-text">发表于</span>
               
-            </a>
-        
-      </h3>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-04-21T15:57:41+08:00">
+                2020-04-21
+              </time>
+            
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2020-04-21T15:57:41+08:00" content="2020-04-21">
-          04-21
-        </time>
-      </div>
+            
 
-    </header>
-  </article>
+            
+          </span>
 
-
-
-      
-
-        
-        
-        
-
-        
           
-          <div class="collection-title">
-            <h2 class="archive-year" id="archive-year-2019">2019</h2>
-          </div>
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2019/04/07/hello-world/" itemprop="url">
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
               
-                <span itemprop="name">Hello World</span>
+                <span class="post-meta-item-text">分类于</span>
               
-            </a>
-        
-      </h3>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/docker/" itemprop="url" rel="index">
+                    <span itemprop="name">docker</span>
+                  </a>
+                </span>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-07T23:36:35+08:00" content="2019-04-07">
-          04-07
-        </time>
-      </div>
+                
+                
+              
+            </span>
+          
 
-    </header>
-  </article>
+          
+            
+          
 
+          
+          
 
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-eye"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  303
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+      
 
+      
+        <h5 id="1-Docker安装：（windows下限制较多，docker的linux模式与VM的虚拟服务会冲突，每次使用需要重新开关服务，重启电脑，所以是在windows上的虚拟主机（VM）中实现，此教程适合使用过linux系统的人员）"><a href="#1-Docker安装：（windows下限制较多，docker的linux模式与VM的虚拟服务会冲突，每次使用需要重新开关服务，重启电脑，所以是在windows上的虚拟主机（VM）中实现，此教程适合使用过linux系统的人员）" class="headerlink" title="1.Docker安装：（windows下限制较多，docker的linux模式与VM的虚拟服务会冲突，每次使用需要重新开关服务，重启电脑，所以是在windows上的虚拟主机（VM）中实现，此教程适合使用过linux系统的人员）"></a>1.Docker安装：（windows下限制较多，docker的linux模式与VM的虚拟服务会冲突，每次使用需要重新开关服务，重启电脑，所以是在windows上的虚拟主机（VM）中实现，此教程适合使用过linux系统的人员）</h5><p>docker安装：<a href="https://www.runoob.com/docker/centos-docker-install.html" target="_blank" rel="noopener">https://www.runoob.com/docker/centos-docker-install.html</a></p>
+<h5 id="2-docker的基本使用"><a href="#2-docker的基本使用" class="headerlink" title="2.docker的基本使用"></a>2.docker的基本使用</h5><p>启动docker服务</p>
+<p><code>service docker start</code></p>
+<p><code>docker ps //显示运行的容器</code></p>
+<p><code>docker start 容器名/容器ID //运行一个容器 stop是停止运行的容器</code></p>
+<p><code>docker attach 容器名/容器ID //进入运行的容器</code>  </p>
+<p>docker刚安装好是没有镜像的，我用的ubuntu来搭建hadoop集群，也可以用其他linux发行版</p>
+<p><code>docker pull ubuntu  //拉取也就是在docker中下载ubuntu镜像,默认是最新的</code>等待下载完成</p>
+<p><code>docker images //查看镜像，可以看到刚拉取的ubuntu镜像</code> </p>
+<p>ok,因为hadoop集群的通信是需要局域网的，所以我们要创建hadoop的专用网络，用桥接模式</p>
+<p><code>docker network create --driver=bridge hadoop</code></p>
+<p>创建好之后查看创建的网络</p>
+<p><code>docker network ls</code></p>
+<p><img src="E:\blog\source\_posts\docker搭建hadoop集群\捕获.PNG" alt="捕获"></p>
+<p>然后用ubuntu镜像运行一个容器</p>
+<p><code>docker run -it ubuntu /bin/bash //i和t分别是以交互模式和终端运行</code></p>
+
+      
     </div>
+    
+    
+    
+  
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    ZhaoHongliang
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://Zhlblank.github.io/2020/04/21/docker/" title="docker搭建hadoop集群">https://Zhlblank.github.io/2020/04/21/docker/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="https://Zhlblank.github.io" target="_blank">CC BY-NC-SA 4.0</a></a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/hadoop/" rel="tag"> hadoop</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/04/07/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -423,6 +556,15 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80MzYyNy8yMDE2Ng=="></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -443,8 +585,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -559,6 +710,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-Docker安装：（windows下限制较多，docker的linux模式与VM的虚拟服务会冲突，每次使用需要重新开关服务，重启电脑，所以是在windows上的虚拟主机（VM）中实现，此教程适合使用过linux系统的人员）"><span class="nav-number">1.</span> <span class="nav-text">1.Docker安装：（windows下限制较多，docker的linux模式与VM的虚拟服务会冲突，每次使用需要重新开关服务，重启电脑，所以是在windows上的虚拟主机（VM）中实现，此教程适合使用过linux系统的人员）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-docker的基本使用"><span class="nav-number">2.</span> <span class="nav-text">2.docker的基本使用</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -713,6 +880,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -741,6 +912,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 

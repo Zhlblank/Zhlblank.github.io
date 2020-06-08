@@ -100,7 +100,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="构造函数,">
 
 
 
@@ -113,17 +113,25 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="构造函数是什么构造函数是一个特殊的成员函数，它的作用是初始化对象的成员属性(变量)； 构造函数的分类和调用规则根据参数分为：有参和无参构造函数，无参是默认的也可以自定义，有参只有自定义的； 根据功能分为：复制构造(拷贝构造(深拷贝和浅拷贝)、移动构造)和普通构造； 调用规则：需要注意的是，系统默认提供了三个类成员函数，构造函数、析构函数、拷贝函数，当定义了拷贝构造或者有参构造，那么默认的无参构造就">
+<meta name="keywords" content="构造函数">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://Zhlblank.github.io/2019/04/07/hello-world/index.html">
+<meta property="og:title" content="拷贝构造&amp;深浅拷贝">
+<meta property="og:url" content="https://Zhlblank.github.io/2020/06/06/拷贝构造&深浅拷贝/index.html">
 <meta property="og:site_name" content="Dream">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="构造函数是什么构造函数是一个特殊的成员函数，它的作用是初始化对象的成员属性(变量)； 构造函数的分类和调用规则根据参数分为：有参和无参构造函数，无参是默认的也可以自定义，有参只有自定义的； 根据功能分为：复制构造(拷贝构造(深拷贝和浅拷贝)、移动构造)和普通构造； 调用规则：需要注意的是，系统默认提供了三个类成员函数，构造函数、析构函数、拷贝函数，当定义了拷贝构造或者有参构造，那么默认的无参构造就">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-07T15:36:35.730Z">
+<meta property="og:image" content="https://zhlblank.github.io/2020/06/06/拷贝构造&深浅拷贝/blog/source/_posts/拷贝构造&深浅拷贝/1.PNG">
+<meta property="og:image" content="https://zhlblank.github.io/2020/06/06/拷贝构造&深浅拷贝/blog/source/_posts/拷贝构造&深浅拷贝/2.PNG">
+<meta property="og:image" content="https://zhlblank.github.io/2020/06/06/拷贝构造&深浅拷贝/blog/source/_posts/拷贝构造&深浅拷贝/3.PNG">
+<meta property="og:image" content="https://zhlblank.github.io/2020/06/06/拷贝构造&深浅拷贝/blog/source/_posts/拷贝构造&深浅拷贝/4.png">
+<meta property="og:image" content="https://zhlblank.github.io/2020/06/06/拷贝构造&深浅拷贝/blog/source/_posts/拷贝构造&深浅拷贝/5.PNG">
+<meta property="og:image" content="https://zhlblank.github.io/2020/06/06/拷贝构造&深浅拷贝/blog/source/_posts/拷贝构造&深浅拷贝/6.PNG">
+<meta property="og:updated_time" content="2020-06-08T08:14:30.317Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="拷贝构造&amp;深浅拷贝">
+<meta name="twitter:description" content="构造函数是什么构造函数是一个特殊的成员函数，它的作用是初始化对象的成员属性(变量)； 构造函数的分类和调用规则根据参数分为：有参和无参构造函数，无参是默认的也可以自定义，有参只有自定义的； 根据功能分为：复制构造(拷贝构造(深拷贝和浅拷贝)、移动构造)和普通构造； 调用规则：需要注意的是，系统默认提供了三个类成员函数，构造函数、析构函数、拷贝函数，当定义了拷贝构造或者有参构造，那么默认的无参构造就">
+<meta name="twitter:image" content="https://zhlblank.github.io/2020/06/06/拷贝构造&深浅拷贝/blog/source/_posts/拷贝构造&深浅拷贝/1.PNG">
 
 
 
@@ -153,13 +161,13 @@
 
 
 
-  <link rel="canonical" href="https://Zhlblank.github.io/2019/04/07/hello-world/">
+  <link rel="canonical" href="https://Zhlblank.github.io/2020/06/06/拷贝构造&深浅拷贝/">
 
 
 
 
 
-  <title>Hello World | Dream</title>
+  <title>拷贝构造&深浅拷贝 | Dream</title>
   
 
 
@@ -328,7 +336,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://Zhlblank.github.io/2019/04/07/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://Zhlblank.github.io/2020/06/06/拷贝构造&深浅拷贝/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Zhl">
@@ -345,7 +353,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Hello World</h2>
+          <h2 class="post-title" itemprop="name headline">拷贝构造&深浅拷贝</h2>
         
 
         <div class="post-meta">
@@ -357,8 +365,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-07T23:36:35+08:00">
-                2019-04-07
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-06-06T23:22:14+08:00">
+                2020-06-06
               </time>
             
 
@@ -367,6 +375,28 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/c/" itemprop="url" rel="index">
+                    <span itemprop="name">c++</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -394,7 +424,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  73
+                  1.2k
                 </span>
               
 
@@ -410,7 +440,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  5
                 </span>
               
             </div>
@@ -431,15 +461,33 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h3 id="构造函数是什么"><a href="#构造函数是什么" class="headerlink" title="构造函数是什么"></a>构造函数是什么</h3><p>构造函数是一个特殊的成员函数，它的作用是初始化对象的成员属性(变量)；</p>
+<h3 id="构造函数的分类和调用规则"><a href="#构造函数的分类和调用规则" class="headerlink" title="构造函数的分类和调用规则"></a>构造函数的分类和调用规则</h3><p>根据参数分为：有参和无参构造函数，无参是默认的也可以自定义，有参只有自定义的；</p>
+<p>根据功能分为：复制构造(拷贝构造(深拷贝和浅拷贝)、移动构造)和普通构造；</p>
+<h4 id="调用规则："><a href="#调用规则：" class="headerlink" title="调用规则："></a>调用规则：</h4><p>需要注意的是，系统默认提供了三个类成员函数，构造函数、析构函数、拷贝函数，当定义了拷贝构造或者有参构造，那么默认的无参构造就不起作用了，析构函数是必调用的</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Preason</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    Preason(<span class="keyword">int</span> a);</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="keyword">int</span> m_age;</span><br><span class="line">&#125;;</span><br><span class="line">Preason::Preason(<span class="keyword">int</span> a)</span><br><span class="line">&#123;</span><br><span class="line">    m_age = a;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Preason p;<span class="comment">//运行会报错，错误(活动)	E0291	类 "Preason" 不存在默认构造函数</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="拷贝构造-amp-深浅拷贝"><a href="#拷贝构造-amp-深浅拷贝" class="headerlink" title="拷贝构造&amp;深浅拷贝"></a>拷贝构造&amp;深浅拷贝</h3><p>首先要清楚的是，深浅拷贝是包含于拷贝构造这个概念的；</p>
+<h5 id="浅拷贝"><a href="#浅拷贝" class="headerlink" title="浅拷贝"></a>浅拷贝</h5><p>默认拷贝函数就是浅拷贝的一个实例，只能够进行值拷贝，不能拷贝内存空间；</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Preason</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    Preason(<span class="keyword">int</span> a);</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="keyword">int</span> m_age;</span><br><span class="line">&#125;;</span><br><span class="line">Preason::Preason(<span class="keyword">int</span> a)</span><br><span class="line">&#123;</span><br><span class="line">    m_age = a;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">   <span class="function">Preason <span class="title">p1</span><span class="params">(<span class="number">100</span>)</span></span>;</span><br><span class="line">   Preason p2 = p1;<span class="comment">//默认拷贝</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="深拷贝"><a href="#深拷贝" class="headerlink" title="深拷贝"></a>深拷贝</h5><p>上述情况只适用于类中没有指针变量的情况</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> _CRT_SECURE_NO_WARNINGS</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Preason</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	Preason();</span><br><span class="line">	Preason(<span class="keyword">char</span> *name,<span class="keyword">int</span> age);</span><br><span class="line">	Preason(<span class="keyword">const</span> Preason&amp; p);</span><br><span class="line">	~Preason();</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">	<span class="keyword">char</span>* m_name;</span><br><span class="line">	<span class="keyword">int</span> m_age;</span><br><span class="line">&#125;;</span><br><span class="line">Preason::Preason()</span><br><span class="line">&#123;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">"无参构造"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br><span class="line">Preason::Preason(<span class="keyword">char</span> *name,<span class="keyword">int</span> age):m_name(<span class="keyword">new</span> <span class="keyword">char</span>[<span class="built_in">strlen</span>(name) + <span class="number">1</span>]),</span><br><span class="line">m_age( age) &#123;</span><br><span class="line">	<span class="built_in">strcpy</span>(m_name,name);</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">"有参构造"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br><span class="line">Preason::Preason(<span class="keyword">const</span> Preason&amp; p)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">"拷贝构造"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">	m_name = p.m_name;<span class="comment">//不注释这行和注释掉这行的差别看下面截图</span></span><br><span class="line">	m_age = p.m_age;</span><br><span class="line">&#125;</span><br><span class="line">Preason::~Preason()</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">if</span>(m_name)</span><br><span class="line">	<span class="keyword">delete</span> m_name;</span><br><span class="line">	m_name = <span class="literal">NULL</span>;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">"析构函数"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc,<span class="keyword">char</span> *argv[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">char</span> n[] = <span class="string">"dfs"</span>;</span><br><span class="line">	<span class="function">Preason <span class="title">p1</span><span class="params">(n,<span class="number">100</span>)</span></span>;</span><br><span class="line">	<span class="function">Preason <span class="title">p2</span><span class="params">(p1)</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>仔细看下面的两个截图</p>
+<p><img src="//Zhlblank.github.io/2020/06/06/拷贝构造&深浅拷贝/blog\source\_posts\拷贝构造&amp;深浅拷贝\1.PNG" alt="1"></p>
+<p><img src="//Zhlblank.github.io/2020/06/06/拷贝构造&深浅拷贝/blog\source\_posts\拷贝构造&amp;深浅拷贝\2.PNG" alt="2"></p>
+<p>在main函数中实例化了两个对象，分别用有参和拷贝初始化，正常情况应该有两个析构函数调用，而第二个图在调用析构函数释放p2对象时，触发断点，这是为何呢？</p>
+<p>这是发生断点的程序的监视图，可以看到两个对象的m_name指向了同一块内存，p1在调用析构函数时已经释放掉了0x017d6080这块内存,而当p2调用析构时要释放的还是这块内存，这就产生了指针悬挂问题，触发断点</p>
+<p><img src="//Zhlblank.github.io/2020/06/06/拷贝构造&深浅拷贝/blog\source\_posts\拷贝构造&amp;深浅拷贝\3.PNG" alt="3"></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//深拷贝</span></span><br><span class="line">Preason::Preason(<span class="keyword">const</span> Preason&amp; p)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">"拷贝构造"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">	<span class="comment">//m_name = p.m_name;</span></span><br><span class="line">	m_name = <span class="keyword">new</span> <span class="keyword">char</span>[<span class="built_in">strlen</span>(p.m_name)+<span class="number">1</span>];</span><br><span class="line">	<span class="built_in">strcpy</span>(m_name,p.m_name);</span><br><span class="line">	m_age = p.m_age;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="//Zhlblank.github.io/2020/06/06/拷贝构造&深浅拷贝/blog\source\_posts\拷贝构造&amp;深浅拷贝\4.png" alt="4"></p>
+<p>深浅拷贝的示意图</p>
+<h3 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h3><h5 id="拷贝函数使用场景以及匿名对象的概念"><a href="#拷贝函数使用场景以及匿名对象的概念" class="headerlink" title="拷贝函数使用场景以及匿名对象的概念"></a>拷贝函数使用场景以及匿名对象的概念</h5><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Preason</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	Preason();</span><br><span class="line">	Preason(<span class="keyword">int</span> age);</span><br><span class="line">	Preason(<span class="keyword">const</span> Preason&amp; p);</span><br><span class="line">	~Preason();</span><br><span class="line">	<span class="function"><span class="keyword">int</span> <span class="title">getage</span><span class="params">()</span></span>;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">	<span class="keyword">int</span> m_age;</span><br><span class="line">&#125;;</span><br><span class="line">Preason::Preason()</span><br><span class="line">&#123;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">"无参构造"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br><span class="line">Preason::Preason(<span class="keyword">int</span> age) &#123;</span><br><span class="line">	m_age = age;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">"有参构造"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br><span class="line">Preason::Preason(<span class="keyword">const</span> Preason&amp; p)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">"拷贝构造"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">	m_age = p.m_age;</span><br><span class="line">&#125;</span><br><span class="line">Preason::~Preason()</span><br><span class="line">&#123;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">"析构函数"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span> Preason::getage()</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">return</span> m_age;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//1.使用已存在的对象初始化新的对象</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">test_a</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="function">Preason <span class="title">p1</span><span class="params">(<span class="number">100</span>)</span></span>;</span><br><span class="line">	<span class="function">Preason <span class="title">p2</span><span class="params">(p1)</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//2.对象以值传递的方式给函数参数传值</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">test_1</span><span class="params">(Preason p)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">test_b</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="function">Preason <span class="title">p1</span><span class="params">(<span class="number">100</span>)</span></span>;</span><br><span class="line">	test_1(p1); <span class="comment">//Preason p=Preason (p1)调用了一次拷贝</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//3.对象以值传递的方式从函数返回 </span></span><br><span class="line"><span class="function">Preason <span class="title">test_2</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="function">Preason <span class="title">p1</span><span class="params">(<span class="number">100</span>)</span></span>;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; p1.getage()&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="keyword">return</span> p1;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">test_c</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	Preason p = test_2();</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; p.getage()&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">//构造初始化</span></span><br><span class="line">	<span class="comment">//Preason p1(10);//隐式调用</span></span><br><span class="line">	<span class="comment">//Preason p2 = Preason(100);//显示调用</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">//拷贝初始化</span></span><br><span class="line">	<span class="comment">//Preason p1(100);</span></span><br><span class="line">	<span class="comment">//Preason p2 = p1;</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">//Preason(20);//匿名对象，编译器在本行代码执行完，会自动释放这个对象</span></span><br><span class="line">	<span class="comment">//cout &lt;&lt; "匿名对象会马上调用析构"&lt;&lt;endl;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>对象以值传递的方式给函数参数传值</p>
+<p><img src="//Zhlblank.github.io/2020/06/06/拷贝构造&深浅拷贝/blog\source\_posts\拷贝构造&amp;深浅拷贝\5.PNG" alt="5"></p>
+<p>对象以值传递的方式从函数返回 </p>
+<p><img src="//Zhlblank.github.io/2020/06/06/拷贝构造&深浅拷贝/blog\source\_posts\拷贝构造&amp;深浅拷贝\6.PNG" alt="6"></p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>1.拷贝构造函数其实是一个构造函数的重载</p>
+<p>2.拷贝构造函数的参数只有一个，且必须传引用</p>
+<p>3.浅拷贝只是对指针的拷贝，拷贝后两个指针指向同一个内存空间，深拷贝不但对指针进行拷贝，而且对指针指向的内容进行拷贝，经深拷贝后的指针是指向两个不同地址的指针</p>
 
       
     </div>
@@ -460,7 +508,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://Zhlblank.github.io/2019/04/07/hello-world/" title="Hello World">https://Zhlblank.github.io/2019/04/07/hello-world/</a>
+    <a href="https://Zhlblank.github.io/2020/06/06/拷贝构造&深浅拷贝/" title="拷贝构造&深浅拷贝">https://Zhlblank.github.io/2020/06/06/拷贝构造&深浅拷贝/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -473,6 +521,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/构造函数/" rel="tag"> 构造函数</a>
+          
+        </div>
+      
 
       
       
@@ -482,15 +536,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2020/04/21/docker搭建hadoop集群/" rel="next" title="docker搭建hadoop集群">
+                <i class="fa fa-chevron-left"></i> docker搭建hadoop集群
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/04/21/docker搭建hadoop集群/" rel="prev" title="docker搭建hadoop集群">
-                docker搭建hadoop集群 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -682,7 +736,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#构造函数是什么"><span class="nav-number">1.</span> <span class="nav-text">构造函数是什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#构造函数的分类和调用规则"><span class="nav-number">2.</span> <span class="nav-text">构造函数的分类和调用规则</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#调用规则："><span class="nav-number">2.1.</span> <span class="nav-text">调用规则：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#拷贝构造-amp-深浅拷贝"><span class="nav-number">3.</span> <span class="nav-text">拷贝构造&amp;深浅拷贝</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#浅拷贝"><span class="nav-number">3.0.1.</span> <span class="nav-text">浅拷贝</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#深拷贝"><span class="nav-number">3.0.2.</span> <span class="nav-text">深拷贝</span></a></li></ol></li></ol><li class="nav-item nav-level-3"><a class="nav-link" href="#使用场景"><span class="nav-number">4.</span> <span class="nav-text">使用场景</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#拷贝函数使用场景以及匿名对象的概念"><span class="nav-number">4.0.1.</span> <span class="nav-text">拷贝函数使用场景以及匿名对象的概念</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">5.</span> <span class="nav-text">总结</span></a></li></div>
             
 
           </div>
